@@ -14,11 +14,16 @@ header {
   text-align: center;
 }
 
+.head {
+  padding-top: 8;
+}
+
 .head-img {
   padding: 0.5rem;
 }
 
 nav {
+  padding-top: 2rem;
   margin-left: 6rem;
   display: flex;
   width: 85rem;
@@ -26,6 +31,32 @@ nav {
   justify-content: space-between;
   background: rgb(255, 255, 255);
   text-align: center;
+  align-items: center;
+  max-width: 80rem;
+}
+
+@media screen and (max-width: 48rem) {
+  nav {
+    margin-left: 0;
+    width: 100%;
+    max-width: 80rem;
+  }  
+}
+
+@media screen and (max-width: 56rem) {
+  nav {
+    margin-left: 0;
+    width: 100%;
+    max-width: 80rem;
+  }  
+}
+
+@media screen and (max-width: 24rem) {
+  nav {
+    margin-left: 0;
+    width: 100%;
+    max-width: 80rem;
+  }  
 }
 
 nav ul {
@@ -70,17 +101,25 @@ nav head-img {
 
 /*! Hero Section */
 #hero-sect {
-  height: 80vh;
-  width: 90vw;
+  height: full;
+  width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  max-width: 80rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  /* margin-left: auto; */
+  
+  text-align: left;
   justify-content: space-between;
 }
 
 .down-arrow {
   stroke: black;
   position: absolute;
-  margin-left: 6rem;
-  margin-top: 6rem;
+  /* margin-left: 6rem; */
+  /* margin: 6rem; */
   bottom: 3em;
   width: 1em;
   animation: moveArrow 1s alternate-reverse infinite;
@@ -93,7 +132,7 @@ nav head-img {
 .devPic {
   height: 68vh;
   margin-right: 6rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .devPic img {
@@ -101,13 +140,13 @@ nav head-img {
 }
 
 .devInfo {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   display: flex;
   flex-direction: column;
 }
 
 .about {
-  margin-left: 6rem;
+  margin-top: 5rem;
   width: 40vw;
   font-size: 2.25rem;
   font-family: Poppins;
@@ -115,9 +154,6 @@ nav head-img {
 
 .moreAbout {
   width: 35vw;
-  margin-top: 48px;
-  margin-right: 6rem;
-  margin-left: 6rem;
   font-size: 21px;
   font-family: Poppins;
   line-clamp: 3;
@@ -164,7 +200,7 @@ nav head-img {
   margin-bottom: 4rem;
   margin-top: 6rem;
   background-color: #ff1ba4;
-  color: white;
+  color: rgb(85, 8, 8);
 }
 
 .skills-left {
